@@ -1,0 +1,232 @@
+@import "variables";
+@import "../vendors/bootstrap-4.6.0/scss/functions";
+@import "../vendors/bootstrap-4.6.0/scss/variables";
+@import "../vendors/bootstrap-4.6.0/scss/mixins";
+
+
+
+.smt.heading {
+    background-image: url(../images/txt-shadow.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding-right: .8em;
+    padding-top: 0.2em;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+header {
+
+    border-bottom-left-radius: 6rem !important;
+
+    .navbar {
+        .nav-item {
+            font-size: 1.2em;
+        }
+    }
+
+    .abilities {
+        .divider {
+            transform: rotate(45deg);
+        }
+    }
+
+
+    .social-links {
+        .social-item {
+            border: 1.4px solid theme-color("primary");
+            font-size: 26px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+.container {
+    .image-container {
+        .photo {
+            width: 90%;
+            float: left;
+            border: 10px solid #dfdfdf;
+        }
+
+        .back {
+            width: 85%;
+            position: absolute;
+            bottom: -8%;
+            z-index: -2;
+        }
+    }
+}
+
+
+.container.services {
+
+    .swiper-container {
+        height: 380px;
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #424242;
+        }
+    }
+
+    .card {
+        cursor: pointer;
+        transition: all 200ms;
+        &:hover {
+            background: #fff !important;
+            box-shadow: 0 1em 1em #0001;
+        }
+    }
+}
+
+
+.container.portfolio {
+
+    .filters span {
+        cursor: pointer;
+    }
+
+    .grid-item img {
+        width: 100%;
+    }
+}
+
+
+.container.resume{
+
+    .card-body::before {
+        content: "";
+        height: 4px;
+        position: absolute;
+        left: 1.25rem;
+        right: 1.25rem;
+        background: #212121;
+        bottom: 0;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}
+
+
+.container.reviews {
+
+    .swiper-container {
+        height: 290px;
+        padding-top: 30px;
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #424242;
+        }
+    }
+    
+    .card {
+
+        .image-container {
+            position: relative;
+            padding-top: 25%;
+            border-radius: 50%;
+            border: 2px solid #212121;
+
+
+            .background {
+                position: absolute;
+                width: 96%;
+                height: 96%;
+                background: #eee;
+                border-radius: 50%;
+                bottom: 2%;
+                left: 2%;
+            }
+
+            img {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+            }
+        }
+    }
+}
+
+
+
+.container.customers {
+
+    .swiper-container {
+        height: 170px;
+        padding-top: 30px;
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #424242;
+        }
+
+        .swiper-pagination {
+            bottom: -8px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -40px;
+        }
+    }
+    
+
+    img {
+        filter: grayscale(1) drop-shadow(0 0 0 #0002);
+        width: 70%;
+        transition: filter 120ms;
+        cursor: pointer;
+
+
+        &:hover {
+            filter: grayscale(0) drop-shadow(0 0.8em 0.5em #0002);
+        }
+    }
+
+}
+
+
+.container.articles {
+    .image-container .time-lable {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding: 6px 15px;
+        background: #424242c9;
+        color: #fff;
+        font-weight: lighter;
+        border-top-left-radius: 4px;
+    }
+}
+
+
+.container.footer {
+    i.border {
+        border-color: #212121 !important;
+    }
+
+    input {
+        height: 2.6em;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    textarea {
+        padding-right: 12px;
+        padding-top: 10px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: #d3d3d3;
+    }
+}
